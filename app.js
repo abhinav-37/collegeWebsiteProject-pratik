@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({
   app.use(passport.session());
 
 
- mongoose.connect("mongodb+srv://admin-Abhinav:admin-Abhinav@cluster0-fz1t0.mongodb.net/testAuthDb", {
+ mongoose.connect("mongodb+srv://admin-Abhinav:<password>@cluster0-fz1t0.mongodb.net/testAuthDb", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 },function(err){
