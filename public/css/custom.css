@@ -1,0 +1,37 @@
+.alert-success{
+    position: absolute!important;
+    top: 50px;
+}
+@media(max-width:765px){
+    .alert-success{
+    top: 10px;
+    padding-bottom: 0;
+    margin: 0 5px;
+}
+    .custom-a{
+        margin-bottom:5px
+    }
+    .custom-a1{
+        margin-bottom:15px
+    }
+}
+.custom-title{
+    background: #B36DF1!important;
+    font-size:10px;
+    position: absolute!important;
+    padding: 10px 20px!important;
+    width: 300px;
+    top: 10px;
+    text-align: center;
+
+}
+.custom-title h1{
+    font-size: 1.5rem;
+    color: white;
+}
+.custom-a:hover{
+    color: #ea5455!important;
+}
+.custom-a1:hover{
+    color: #00bcd4!important;
+}
