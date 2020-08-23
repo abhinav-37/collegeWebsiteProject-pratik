@@ -82,6 +82,10 @@ app.get("/logout", function (req, res) {
 app.get("/", function (req, res) {
     res.render("index.ejs")
 })
+app.get("/admission", function (req, res) {
+    res.render("indexInside/admission.ejs")
+})
+
 
 // ==================post routes ==========================
 app.post("/register", function (req, res) {
