@@ -21,7 +21,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-mongoose.connect("mongodb+srv://admin-Abhinav:<password>@cluster0-fz1t0.mongodb.net/testAuthDb", {
+mongoose.connect("mongodb+srv://admin-Abhinav:admin-Abhinav@cluster0-fz1t0.mongodb.net/testAuthDb", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, function (err) {
@@ -79,6 +79,10 @@ app.get("/logout", function (req, res) {
     res.redirect("/login")
 })
 
+app.get("/", function (req, res) {
+    res.render("index.ejs")
+})
+
 // ==================post routes ==========================
 app.post("/register", function (req, res) {
 
@@ -106,7 +110,7 @@ app.post("/submitNotice", function (req, res) {
         });
         notice.save();
         if (req.isAuthenticated()) {
-            res.render("noticeForm", { alertText: " Notice uploaded successfully." })
+            res.render("noticeForm", { alertText: " Notice uploaded successfully.", userName: req.body.username })
         } else {
             res.redirect("/login")
         }
@@ -135,6 +139,6 @@ app.post("/login", function (req, res) {
 
 
 
-app.listen("5000", function () {
+app.listen(process.env.PORT || 8000, function () {
     console.log("server has started");
 })
