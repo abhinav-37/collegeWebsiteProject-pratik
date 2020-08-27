@@ -99,6 +99,9 @@ app.get("/rules", function (req, res) {
 app.get("/results", function (req, res) {
     res.render("indexInside/results.ejs");
 });
+app.get("/facilities", function (req, res) {
+    res.render("indexInside/facilities.ejs");
+});
 // ==================post routes ==========================
 app.post("/register", function (req, res) {
     if (req.isAuthenticated()) {

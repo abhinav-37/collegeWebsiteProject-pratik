@@ -17,30 +17,24 @@
         .nav-link:hover {
             color: red !important;
         }
-        .col-lg-6 {
-            border-left: black solid 1px;
+        img {
+            width: 100%;
+            box-shadow: 2px 2px 10px rgb(92, 90, 90);
         }
-        .col-lg-6 > h3 {
-            padding-left: 20px;
+        .row {
+            margin-bottom: 10rem;
+            border-bottom: grey 1px solid;
         }
-        ol {
-            margin-left: 30px;
-        }
-        li {
-            font-size: 1.65rem !important;
-        }
-        .main-container {
-            margin-top: 3rem;
-        }
-        h1 {
-            border-bottom: black 1px solid;
-            font-size: 3.5rem;
-        }
-        h2 {
-            font-size: 2.3rem;
+        @media (max-width: 765px) {
+            .row {
+                display: block !important;
+            }
         }
         h3 {
-            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        h4 {
+            padding-top: 4rem;
         }
     </style>
 
@@ -89,7 +83,7 @@
                         <li class="nav-item">
                             <a
                                 class="nav-link"
-                                href="#about"
+                                href="/#chefs"
                                 class="smoothScroll"
                                 >Staff</a
                             >
@@ -151,156 +145,125 @@
             </div>
         </section>
 
-        <section class="main-container container">
-            <div class="row">
+        <section style="text-align: center" class="container">
+            <h3 style="padding-bottom: 20px">DLEE</h3>
+            <div
+                style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                "
+                class="row"
+            >
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h1 style="text-align: center">Arts</h1>
-                    <h2 style="padding-bottom: 0px">A) F.Y.B.A.</h2>
-                    <h3 style="padding-bottom: 10px">Compulsory Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">
-                            Communication Skill in English (C.S.)
-                        </li>
-                        <li class="addmitions-points">Marathi</li>
-                        <li class="addmitions-points">
-                            Foundation Course Paper I
-                        </li>
-                    </Ol>
-                    <h3 style="padding-bottom: 10px">Optional Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">Economics</li>
-                        <li class="addmitions-points">
-                            English / Hindi / Marathi
-                        </li>
-                        <li class="addmitions-points">Geography</li>
-                    </Ol>
-                    <h2 style="padding-bottom: 10px">B) S.Y.B.A.</h2>
-                    <h3 style="padding-bottom: 10px">Compulsory Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">
-                            Foundation Course Paper II
-                        </li>
-                        <li class="addmitions-points">
-                            Applied Compoment Group (any one)
-                            <ul>
-                                <li>Business Communication</li>
-                                <li>Advertising</li>
-                                <li>Demography</li>
-                            </ul>
-                        </li>
-                    </Ol>
-                    <h3 style="padding-bottom: 10px">Optional Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">
-                            English (Paper II & III) <br />OR <br />Marathi
-                            (Opt.) (Paper II & III) <br />OR <br />Hindi (Paper
-                            II & III)
-                        </li>
-                        <li class="addmitions-points">
-                            Economics (Paper II & III)
-                        </li>
-                        <li class="addmitions-points">
-                            Geography (Paper II & III)
-                        </li>
-                    </Ol>
-                    <h2 style="padding-bottom: 10px">C) T.Y.B.A.</h2>
-                    <div style="padding-left: 20px">
-                        <h3>Six Papers</h3>
-                        Marathi / English / Hindi Economics / Geography
-                    </div>
-                    <div style="padding-left: 20px">
-                        <h3>Three Papers</h3>
-                        Marathi-Economics / Hindi-Economics Marathi-Geography
-                        /Hindi-Geography English-Economics
-                    </div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Est, porro commodi vel molestiae aspernatur magnam
+                        accusantium nobis sunt odit provident explicabo harum
+                        unde sapiente suscipit sed fugiat. Voluptate, officia
+                        dicta. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Enim dolorum aliquid corrupti labore
+                        voluptatem, similique sed temporibus error delectus
+                        ducimus praesentium animi. Provident culpa beatae odit
+                        suscipit quasi, sapiente quibusdam?
+                    </p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h1 style="text-align: center">Commerce</h1>
-                    <h2 style="padding-bottom: 10px">A) F.Y.B.Com.</h2>
-                    <h3 style="padding-bottom: 10px">Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">
-                            Foundation Course Paper I
-                        </li>
-                        <li class="addmitions-points">
-                            Business Economics Paper I
-                        </li>
-                        <li class="addmitions-points">
-                            Business Communication
-                        </li>
-                        <li class="addmitions-points">Environmental Studies</li>
-                        <li class="addmitions-points">
-                            Mathematical & Statistical Techniques
-                        </li>
-                        <li class="addmitions-points">
-                            Accounting & Financial Management Paper I
-                        </li>
-                        <li class="addmitions-points">Commerce Paper I</li>
-                    </Ol>
-
-                    <h2 style="padding-bottom: 10px">B) S.Y.B.Com.</h2>
-                    <h3 style="padding-bottom: 10px">Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">
-                            Foundation Course Paper II
-                        </li>
-                        <li class="addmitions-points">
-                            Business Economics Paper II
-                        </li>
-                        <li class="addmitions-points">Business Law</li>
-                        <li class="addmitions-points">Commerce Paper II</li>
-                        <li class="addmitions-points">
-                            Accounting & Financial Management Paper II
-                        </li>
-                        <li class="addmitions-points">
-                            Applied Component Group (Any One)
-                            <ul>
-                                <li>Mass Communication</li>
-                                <li>Economics System</li>
-                                <li>Advertising</li>
-                            </ul>
-                        </li>
-                        <li class="addmitions-points">
-                            Financial Accounting & Auditing - Auditing
-                        </li>
-                    </Ol>
-
-                    <h2 style="padding-bottom: 10px">C) T.Y.B.Com.</h2>
-                    <div style="padding-left: 20px">
-                        <h3>Six Papers</h3>
-                        Marathi / English / Hindi Economics / Geography
-                    </div>
-                    <div style="padding-left: 20px">
-                        <h3>A) Special Group (3 Papers)</h3>
-                        <ol>
-                            <li>Financial Accounting & Auditing Paper I</li>
-                            <li>Auditing & Cost Accountung Paper II</li>
-                        </ol>
-
-                        <h4 style="padding-left: 30%">OR</h4>
-                        <h3>B) Special Group (3 Papers)</h3>
-                        <ol>
-                            <li>Business Management Paper I</li>
-                            <li>Business Management Paper II</li>
-                            <li>Business Management Paper III</li>
-                            <h4 style="padding-left: 30%">AND</h4>
-                            <li>
-                                Marketing And Human Resource Management
-                                (M.H.R.M.)
-                            </li>
-                            <li>Business Economics Paper III</li>
-                            <li>Marketing Research</li>
-                            <li>Export Marketing OR Industrial Psychology</li>
-                        </ol>
-                    </div>
+                    <img
+                        src="https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="facility images"
+                    />
                 </div>
             </div>
+
+            <h3 style="padding-bottom: 20px">NSS</h3>
+            <div
+                style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                "
+                class="row"
+            >
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img
+                        src="https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="facility images"
+                    />
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Est, porro commodi vel molestiae aspernatur magnam
+                        accusantium nobis sunt odit provident explicabo harum
+                        unde sapiente suscipit sed fugiat. Voluptate, officia
+                        dicta. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Enim dolorum aliquid corrupti labore
+                        voluptatem, similique sed temporibus error delectus
+                        ducimus praesentium animi. Provident culpa beatae odit
+                        suscipit quasi, sapiente quibusdam?
+                    </p>
+                </div>
+            </div>
+
+            <h3 style="padding-bottom: 20px">Library</h3>
+            <div
+                style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                "
+                class="row"
+            >
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Est, porro commodi vel molestiae aspernatur magnam
+                        accusantium nobis sunt odit provident explicabo harum
+                        unde sapiente suscipit sed fugiat. Voluptate, officia
+                        dicta. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Enim dolorum aliquid corrupti labore
+                        voluptatem, similique sed temporibus error delectus
+                        ducimus praesentium animi. Provident culpa beatae odit
+                        suscipit quasi, sapiente quibusdam?
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img
+                        src="https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="facility images"
+                    />
+                </div>
+            </div>
+
+            <h3 style="padding-bottom: 20px">Post Matric Scholarships</h3>
+            <h4>subheading 1</h4>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
+                dignissimos libero eveniet quae nostrum similique rem? Tenetur
+                sequi vitae molestias? Quam recusandae cupiditate deserunt
+                labore. Maiores quaerat illum ratione at.
+            </p>
+            <h4>subheading 2</h4>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
+                dignissimos libero eveniet quae nostrum similique rem? Tenetur
+                sequi vitae molestias? Quam recusandae cupiditate deserunt
+                labore. Maiores quaerat illum ratione at.
+            </p>
+            <h4>subheading 3</h4>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
+                dignissimos libero eveniet quae nostrum similique rem? Tenetur
+                sequi vitae molestias? Quam recusandae cupiditate deserunt
+                labore. Maiores quaerat illum ratione at.
+            </p>
         </section>
 
         <!-- FOOTER -->
         <footer id="footer" data-stellar-background-ratio="0.5">
             <div class="container">
-                <div class="row">
+                <div style="margin-bottom: 0 !important" class="row">
                     <div class="col-md-3 col-sm-8">
                         <div class="footer-info">
                             <div class="section-title">
