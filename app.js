@@ -97,10 +97,19 @@ app.get("/rules", function (req, res) {
     res.render("indexInside/rules.ejs");
 });
 app.get("/results", function (req, res) {
-    res.render("indexInside/results.ejs");
+    res.render("indexInside/result_year1.ejs");
 });
 app.get("/facilities", function (req, res) {
     res.render("indexInside/facilities.ejs");
+});
+app.get("/year1", function (req, res) {
+    res.render("indexInside/result_year1.ejs");
+});
+app.get("/year2", function (req, res) {
+    res.render("indexInside/result_year2.ejs");
+});
+app.get("/year3", function (req, res) {
+    res.render("indexInside/result_year3.ejs");
 });
 // ==================post routes ==========================
 app.post("/register", function (req, res) {
