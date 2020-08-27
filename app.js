@@ -45,6 +45,10 @@ const noticeSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    time: {
+        type: Date,
+        default: Date.now(),
+    },
 });
 
 userSchema.plugin(passportLocalMongoose);
