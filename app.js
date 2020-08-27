@@ -85,7 +85,10 @@ app.get("/logout", function (req, res) {
 });
 
 app.get("/", function (req, res) {
-    res.render("index.ejs");
+    Notice.find({}, function (err, post) {
+        post.reverse();
+        res.render("index.ejs", { notice: post });
+    });
 });
 app.get("/admission", function (req, res) {
     res.render("indexInside/admission.ejs");
@@ -135,13 +138,14 @@ app.post("/register", function (req, res) {
         res.redirect("/login");
     }
 });
-app.post("/submitNotice", function (req, res) {
+app.post("/submitNotice", async function (req, res) {
     if (req.isAuthenticated()) {
         const notice = new Notice({
             notice: req.body.noticeText,
         });
-        notice.save();
+        await notice.save();
         if (req.isAuthenticated()) {
+            console.log(req.body.username);
             res.render("noticeForm", {
                 alertText: " Notice uploaded successfully.",
                 userName: req.body.username,
@@ -171,6 +175,6 @@ app.post("/login", function (req, res) {
     });
 });
 
-app.listen(process.env.PORT || 8000, function () {
+app.listen(process.env.PORT || 8080, function () {
     console.log("server has started");
 });
