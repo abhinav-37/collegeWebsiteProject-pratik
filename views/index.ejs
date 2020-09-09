@@ -271,7 +271,9 @@
                                 <% for(var j= 0; j<length; j++){ %>
                                     <div class="item notice-show">
                                         <p><%= notice[j].notice %></p>
+                                        <% if(notice[i].drive){ %>
                                         <a target="_blank" href=<%= notice[i].drive %>>Click to open the notice</a>
+                                        <% } %>
                                         <!-- <div class="tst-author">
                                             <h4>Digital Carlson</h4>
                                             <span>Pharetra quam sit amet</span>
