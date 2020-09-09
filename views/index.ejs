@@ -8,6 +8,9 @@
             justify-content: center;
 
         }
+        .notive-a{
+            color: rgb(106, 158, 85);
+        }
     </style>
     <body>
         <!-- PRE LOADER -->
@@ -260,7 +263,7 @@
                             <div class="item notice-show">
                                 <p><%= notice[i].notice %></p>
                                 <% if(notice[i].drive){ %>
-                                    <a target="_blank" href=<%= notice[i].drive %> >Click to open the notice</a>
+                                    <a class="notive-a" target="_blank" href=<%= notice[i].drive %> >Click to open the notice</a>
                                 <% } %>
                                 <!-- <div class="tst-author">
                                     <h4>Digital Carlson</h4>
@@ -272,7 +275,7 @@
                                     <div class="item notice-show">
                                         <p><%= notice[j].notice %></p>
                                         <% if(notice[j].drive){ %>
-                                            <a target="_blank" href=<%= notice[j].drive %>>Click to open the notice</a>
+                                            <a class="notive-a" target="_blank" href=<%= notice[j].drive %>>Click to open the notice</a>
                                         <% } %>
                                         <!-- <div class="tst-author">
                                             <h4>Digital Carlson</h4>

@@ -97,7 +97,7 @@ app.get("/logout", function (req, res) {
 app.get("/", function (req, res) {
     Notice.find({}, function (err, post) {
         post.reverse();
-        console.log(post);
+
         res.render("index.ejs", { notice: post });
     });
 });
