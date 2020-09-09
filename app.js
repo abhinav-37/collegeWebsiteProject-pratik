@@ -41,9 +41,15 @@ mongoose.set("useCreateIndex", true);
 
 const userSchema = new mongoose.Schema({});
 const noticeSchema = new mongoose.Schema({
+    user: {
+        type: String,
+    },
     notice: {
         type: String,
         required: true,
+    },
+    drive: {
+        type: String,
     },
     time: {
         type: Date,
@@ -91,6 +97,7 @@ app.get("/logout", function (req, res) {
 app.get("/", function (req, res) {
     Notice.find({}, function (err, post) {
         post.reverse();
+        console.log(post);
         res.render("index.ejs", { notice: post });
     });
 });
@@ -145,14 +152,15 @@ app.post("/register", function (req, res) {
 app.post("/submitNotice", async function (req, res) {
     if (req.isAuthenticated()) {
         const notice = new Notice({
+            user: req.user.username,
             notice: req.body.noticeText,
+            drive: req.body.drive,
         });
         await notice.save();
         if (req.isAuthenticated()) {
-            console.log(req.body.username);
             res.render("noticeForm", {
                 alertText: " Notice uploaded successfully.",
-                userName: req.body.username,
+                userName: req.user.username,
             });
         } else {
             res.redirect("/login");
@@ -179,6 +187,6 @@ app.post("/login", function (req, res) {
     });
 });
 
-app.listen(process.env.PORT || 8080, function () {
+app.listen(process.env.PORT || 8000, function () {
     console.log("server has started");
 });

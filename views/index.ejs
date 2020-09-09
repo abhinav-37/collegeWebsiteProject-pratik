@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include("partialsindex/header") -%>
+    <style>
+        .notice-show{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
+        }
+    </style>
     <body>
         <!-- PRE LOADER -->
 
@@ -250,8 +257,11 @@
                         <div class="owl-carousel owl-theme">
                             <% let length = notice.length; if(length >= 4){ %>
                             <% for(var i= 0; i<4; i++){ %>
-                            <div class="item">
+                            <div class="item notice-show">
                                 <p><%= notice[i].notice %></p>
+                                <% if(notice[i].drive){ %>
+                                    <a target="_blank" href=<%= notice[i].drive %> >Click to open the notice</a>
+                                <% } %>
                                 <!-- <div class="tst-author">
                                     <h4>Digital Carlson</h4>
                                     <span>Pharetra quam sit amet</span>
@@ -259,8 +269,9 @@
                             </div>
                             <% } }else if(length<4 && length > 0 ){ %>
                                 <% for(var j= 0; j<length; j++){ %>
-                                    <div class="item">
+                                    <div class="item notice-show">
                                         <p><%= notice[j].notice %></p>
+                                        <a target="_blank" href=<%= notice[i].drive %>>Click to open the notice</a>
                                         <!-- <div class="tst-author">
                                             <h4>Digital Carlson</h4>
                                             <span>Pharetra quam sit amet</span>
