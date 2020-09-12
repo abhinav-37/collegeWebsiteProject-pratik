@@ -129,7 +129,7 @@ section {
 
 .about-image img,
 .team-thumb img {
-    width: 100%;
+    width: 70%;
 }
 
 #google-map iframe {
@@ -502,7 +502,7 @@ section {
 .team-thumb .team-hover {
     position: absolute;
     background: #1c1c1c;
-    width: 100%;
+    width: 85%;
     height: 100%;
     top: 0;
     right: 0;
