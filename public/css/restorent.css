@@ -794,8 +794,8 @@ footer .social-icon {
 }
 
 .footer-open-hour {
-    background: #ce3232;
-    background: url("../images/footer-open-hour-bg.jpg") center center no-repeat;
+    background: #ad8686;
+    /* background: url("../images/footer-open-hour-bg.jpg") center center no-repeat; */
     background-size: cover;
     border-radius: 20px;
     margin-top: 0;
