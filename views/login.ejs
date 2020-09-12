@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Login</title>
+        <%- include("partials/head") -%>
+    </head>
 
-<head>
-    <title>Login</title>
-    <%- include("partials/head") -%>
-</head>
+    <body>
+        <div class="limiter">
+            <div
+                class="container-login100"
+                style="background-image: url('images/bg-01.jpg')"
+            >
+                <div style="width: 500px" class="wrap-login100">
+                    <form
+                        action="/login"
+                        method="post"
+                        class="login100-form validate-form"
+                    >
+                        <span class="login100-form-logo">
+                            <img
+                                width="80rem"
+                                src="images/icons/jbn_logo_final.png"
+                                alt=""
+                            />
+                        </span>
+                        <span class="login100-form-title p-b-34 p-t-27">
+                            Log in
+                        </span>
 
-<body>
+                        <div
+                            class="wrap-input100 validate-input"
+                            data-validate="Enter username"
+                        >
+                            <input
+                                class="input100"
+                                type="text"
+                                name="username"
+                                placeholder="Username"
+                            />
+                            <span
+                                class="focus-input100"
+                                data-placeholder="&#xf207;"
+                            ></span>
+                        </div>
 
-    <div class="limiter">
-        <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-            <div style="width: 500px;" class="wrap-login100">
-                <form action="/login" method="post" class="login100-form validate-form">
-                    <span class="login100-form-logo">
-                        <i class="zmdi zmdi-landscape"></i>
-                    </span>
-
-                    <span class="login100-form-title p-b-34 p-t-27">
-                        Log in
-                    </span>
-
-                    <div class="wrap-input100 validate-input" data-validate="Enter username">
-                        <input class="input100" type="text" name="username" placeholder="Username">
-                        <span class="focus-input100" data-placeholder="&#xf207;"></span>
-                    </div>
-
-                    <div class="wrap-input100 validate-input" data-validate="Enter password">
-                        <input class="input100" type="password" name="password" placeholder="Password">
-                        <span class="focus-input100" data-placeholder="&#xf191;"></span>
-                    </div>
-                    <div class="container-login100-form-btn">
-                        <button type="submit" class="login100-form-btn">
-                            Login
-                        </button>
-                    </div>
-                </form>
+                        <div
+                            class="wrap-input100 validate-input"
+                            data-validate="Enter password"
+                        >
+                            <input
+                                class="input100"
+                                type="password"
+                                name="password"
+                                placeholder="Password"
+                            />
+                            <span
+                                class="focus-input100"
+                                data-placeholder="&#xf191;"
+                            ></span>
+                        </div>
+                        <div class="container-login100-form-btn">
+                            <button type="submit" class="login100-form-btn">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 
+        <div id="dropDownSelect1"></div>
 
-    <div id="dropDownSelect1"></div>
-
-    <%- include("partials/footer") -%>
-
-</body>
-
+        <%- include("partials/footer") -%>
+    </body>
 </html>
