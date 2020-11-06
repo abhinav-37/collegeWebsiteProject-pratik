@@ -126,6 +126,9 @@ app.get("/year2", function (req, res) {
 app.get("/year3", function (req, res) {
     res.render("indexInside/result_year3.ejs");
 });
+app.get("/management", function (req, res) {
+    res.render("indexInside/management")
+})
 // ==================post routes ==========================
 app.post("/register", function (req, res) {
     if (req.isAuthenticated()) {
