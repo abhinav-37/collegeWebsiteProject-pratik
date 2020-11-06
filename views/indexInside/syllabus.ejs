@@ -1,396 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include("../partialsindex/header") -%>
-    <style>
-        @media (min-width: 765px) {
-            #footer {
-                bottom: 0;
-                width: 100%;
-                padding-bottom: 0;
-            }
+<%- include("../partialsindex/header") -%>
+<style>
+    @media (min-width: 765px) {
+        #footer {
+            bottom: 0;
+            width: 100%;
+            padding-bottom: 0;
         }
+    }
 
-        .nav-link {
-            color: white !important;
-        }
+    .nav-link {
+        color: white !important;
+    }
 
-        .nav-link:hover {
-            color: red !important;
-        }
-        .col-lg-6 {
-            border-left: rgb(128, 124, 124) solid 0.1px;
-        }
-        .col-lg-6 > h3 {
-            padding-left: 20px;
-        }
-        ol {
-            margin-left: 30px;
-        }
-        li {
-            font-size: 1.65rem !important;
-        }
-        .main-container {
-            margin-top: 3rem;
-        }
-        h1 {
-            border-bottom: rgb(168, 165, 165) 0.1px solid;
-            font-size: 3.5rem;
-        }
-        h2 {
-            font-size: 2.3rem;
-        }
-        h3 {
-            font-size: 1.6rem;
-        }
-    </style>
+    .nav-link:hover {
+        color: red !important;
+    }
 
-    <body>
-        <!-- PRE LOADER -->
+    .col-lg-6 {
+        border-left: rgb(128, 124, 124) solid 0.1px;
+    }
 
-        <div class="preloader">
-            <div id="loader"></div>
-        </div>
+    .col-lg-6>h3 {
+        padding-left: 20px;
+    }
 
-        <!-- MENU -->
-        <section
-            style="background-color: black; color: white"
-            class="navbar custom-navbar navbar-fixed-top"
-            role="navigation"
-        >
-            <div class="container">
-                <div class="navbar-header">
-                    <button
-                        class="navbar-toggle"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                    >
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
-                    </button>
+    ol {
+        margin-left: 30px;
+    }
 
-                    <!-- lOGO TEXT HERE -->
-                    <a style="padding: 5px 0 0" href="/" class="navbar-brand"
-                        ><img
-                            style="width: 40px"
-                            src="images/icons/jbn_logo_final.png"
-                            alt=""
-                    /></a>
-                </div>
+    li {
+        font-size: 1.65rem !important;
+    }
 
-                <!-- MENU LINKS -->
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-nav-first">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#home"
-                                class="smoothScroll"
-                                >About</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#about"
-                                class="smoothScroll"
-                                >Staff</a
-                            >
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                data-toggle="dropdown"
-                            >
-                                Acedemics
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="/syllabus">
-                                        Syllabus</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="/rules">
-                                        Rules & Regulations
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="/results">
-                                        Results
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+    .main-container {
+        margin-top: 3rem;
+    }
 
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="/admission"
-                                class="smoothScroll"
-                                >Admission</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="/facilities"
-                                class="smoothScroll"
-                                >Facilities</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="smoothScroll">Contact</a>
-                        </li>
-                    </ul>
+    h1 {
+        border-bottom: rgb(168, 165, 165) 0.1px solid;
+        font-size: 3.5rem;
+    }
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <a href="/login" class="section-btn"
-                            ><i
-                                style="margin-right: 10px"
-                                class="fas fa-sign-in-alt"
-                            ></i
-                            >Login</a
-                        >
-                    </ul>
-                </div>
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+</style>
+
+<body>
+    <!-- PRE LOADER -->
+
+    <div class="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- MENU -->
+    <section style="background-color: black; color: white" class="navbar custom-navbar navbar-fixed-top"
+        role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+
+                <!-- lOGO TEXT HERE -->
+                <a style="padding: 5px 0 0" href="/" class="navbar-brand"><img style="width: 40px"
+                        src="images/icons/jbn_logo_final.png" alt="" /></a>
             </div>
-        </section>
 
-        <section class="main-container container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h1 style="text-align: center">Arts</h1>
-                    <h2 style="padding-bottom: 0px">A) F.Y.B.A.</h2>
-                    <h3 style="padding-bottom: 10px">Compulsory Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">
-                            Communication Skill in English (C.S.)
-                        </li>
-                        <li class="addmitions-points">Marathi</li>
-                        <li class="addmitions-points">
-                            Foundation Course Paper I
-                        </li>
-                    </Ol>
-                    <h3 style="padding-bottom: 10px">Optional Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">Economics</li>
-                        <li class="addmitions-points">
-                            English / Hindi / Marathi
-                        </li>
-                        <li class="addmitions-points">Geography</li>
-                    </Ol>
-                    <h2 style="padding-bottom: 10px">B) S.Y.B.A.</h2>
-                    <h3 style="padding-bottom: 10px">Compulsory Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">
-                            Foundation Course Paper II
-                        </li>
-                        <li class="addmitions-points">
-                            Applied Compoment Group (any one)
-                            <ul>
-                                <li>Business Communication</li>
-                                <li>Advertising</li>
-                                <li>Demography</li>
-                            </ul>
-                        </li>
-                    </Ol>
-                    <h3 style="padding-bottom: 10px">Optional Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">
-                            English (Paper II & III) <br />OR <br />Marathi
-                            (Opt.) (Paper II & III) <br />OR <br />Hindi (Paper
-                            II & III)
-                        </li>
-                        <li class="addmitions-points">
-                            Economics (Paper II & III)
-                        </li>
-                        <li class="addmitions-points">
-                            Geography (Paper II & III)
-                        </li>
-                    </Ol>
-                    <h2 style="padding-bottom: 10px">C) T.Y.B.A.</h2>
-                    <div style="padding-left: 20px">
-                        <h3>Six Papers</h3>
-                        Marathi / English / Hindi Economics / Geography
-                    </div>
-                    <div style="padding-left: 20px">
-                        <h3>Three Papers</h3>
-                        Marathi-Economics / Hindi-Economics Marathi-Geography
-                        /Hindi-Geography English-Economics
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h1 style="text-align: center">Commerce</h1>
-                    <h2 style="padding-bottom: 10px">A) F.Y.B.Com.</h2>
-                    <h3 style="padding-bottom: 10px">Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">
-                            Foundation Course Paper I
-                        </li>
-                        <li class="addmitions-points">
-                            Business Economics Paper I
-                        </li>
-                        <li class="addmitions-points">
-                            Business Communication
-                        </li>
-                        <li class="addmitions-points">Environmental Studies</li>
-                        <li class="addmitions-points">
-                            Mathematical & Statistical Techniques
-                        </li>
-                        <li class="addmitions-points">
-                            Accounting & Financial Management Paper I
-                        </li>
-                        <li class="addmitions-points">Commerce Paper I</li>
-                    </Ol>
-
-                    <h2 style="padding-bottom: 10px">B) S.Y.B.Com.</h2>
-                    <h3 style="padding-bottom: 10px">Subjects</h3>
-                    <Ol>
-                        <li class="addmitions-points">
-                            Foundation Course Paper II
-                        </li>
-                        <li class="addmitions-points">
-                            Business Economics Paper II
-                        </li>
-                        <li class="addmitions-points">Business Law</li>
-                        <li class="addmitions-points">Commerce Paper II</li>
-                        <li class="addmitions-points">
-                            Accounting & Financial Management Paper II
-                        </li>
-                        <li class="addmitions-points">
-                            Applied Component Group (Any One)
-                            <ul>
-                                <li>Mass Communication</li>
-                                <li>Economics System</li>
-                                <li>Advertising</li>
-                            </ul>
-                        </li>
-                        <li class="addmitions-points">
-                            Financial Accounting & Auditing - Auditing
-                        </li>
-                    </Ol>
-
-                    <h2 style="padding-bottom: 10px">C) T.Y.B.Com.</h2>
-                    <div style="padding-left: 20px">
-                        <h3>Six Papers</h3>
-                        Marathi / English / Hindi Economics / Geography
-                    </div>
-                    <div style="padding-left: 20px">
-                        <h3>A) Special Group (3 Papers)</h3>
-                        <ol>
-                            <li>Financial Accounting & Auditing Paper I</li>
-                            <li>Auditing & Cost Accountung Paper II</li>
-                        </ol>
-
-                        <h4 style="padding-left: 30%">OR</h4>
-                        <h3>B) Special Group (3 Papers)</h3>
-                        <ol>
-                            <li>Business Management Paper I</li>
-                            <li>Business Management Paper II</li>
-                            <li>Business Management Paper III</li>
-                            <h4 style="padding-left: 30%">AND</h4>
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" class="smoothScroll">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about" class="smoothScroll">management</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                            Acedemics
+                        </a>
+                        <ul class="dropdown-menu">
                             <li>
-                                Marketing And Human Resource Management
-                                (M.H.R.M.)
+                                <a class="dropdown-item" href="/syllabus">
+                                    Syllabus</a>
                             </li>
-                            <li>Business Economics Paper III</li>
-                            <li>Marketing Research</li>
-                            <li>Export Marketing OR Industrial Psychology</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer id="footer" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-8">
-                        <div class="footer-info">
-                            <div class="section-title">
-                                <h2 class="wow fadeInUp" data-wow-delay="0.2s">
-                                    Find us
-                                </h2>
-                            </div>
-                            <address class="wow fadeInUp" data-wow-delay="0.4s">
-                                <p>
-                                    Moti Talao Rd, Salaiwada, Sawantwadi,
-                                    Maharashtra - 416510
-                                </p>
-                            </address>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-8">
-                        <div class="footer-info">
-                            <div class="section-title">
-                                <h2 class="wow fadeInUp" data-wow-delay="0.2s">
-                                    Reservation
-                                </h2>
-                            </div>
-                            <address class="wow fadeInUp" data-wow-delay="0.4s">
-                                <p>090-080-0650 | 090-070-0430</p>
-                                <p>
-                                    <a
-                                        href="mailto:jbnaikcollege@gmail.com
-"
-                                        >jbnaikcollege@gmail.com
-                                    </a>
-                                </p>
-                                <p>LINE: eatery247</p>
-                            </address>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-8">
-                        <div class="footer-info footer-open-hour">
-                            <div class="section-title">
-                                <h2 class="wow fadeInUp" data-wow-delay="0.2s">
-                                    Open Hours
-                                </h2>
-                            </div>
-                            <div class="wow fadeInUp" data-wow-delay="0.4s">
-                                <p>Monday: Closed</p>
-                                <div>
-                                    <strong>Tuesday to Friday</strong>
-                                    <p>7:00 AM - 9:00 PM</p>
-                                </div>
-                                <div>
-                                    <strong>Saturday - Sunday</strong>
-                                    <p>11:00 AM - 10:00 PM</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 col-sm-4">
-                        <ul
-                            class="wow fadeInUp social-icon"
-                            data-wow-delay="0.4s"
-                        >
-                            <li><a href="#" class="fa fa-linkedin"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
-                            <li><a href="#" class="fa fa-envelope"></a></li>
+                            <li>
+                                <a class="dropdown-item" href="/rules">
+                                    Rules & Regulations
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/results">
+                                    Results
+                                </a>
+                            </li>
                         </ul>
+                    </li>
 
-                        <div
-                            class="wow fadeInUp copyright-text"
-                            data-wow-delay="0.8s"
-                        >
-                            <p><br />Copyright &copy; 2020 <br />Restorent</p>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admission" class="smoothScroll">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/facilities" class="smoothScroll">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="smoothScroll">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="/login" class="section-btn"><i style="margin-right: 10px"
+                            class="fas fa-sign-in-alt"></i>Login</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-container container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h1 style="text-align: center">Arts</h1>
+                <h2 style="padding-bottom: 0px">A) F.Y.B.A.</h2>
+                <h3 style="padding-bottom: 10px">Compulsory Subjects</h3>
+                <Ol>
+                    <li class="addmitions-points">
+                        Communication Skill in English (C.S.)
+                    </li>
+                    <li class="addmitions-points">Marathi</li>
+                    <li class="addmitions-points">
+                        Foundation Course Paper I
+                    </li>
+                </Ol>
+                <h3 style="padding-bottom: 10px">Optional Subjects</h3>
+                <Ol>
+                    <li class="addmitions-points">Economics</li>
+                    <li class="addmitions-points">
+                        English / Hindi / Marathi
+                    </li>
+                    <li class="addmitions-points">Geography</li>
+                </Ol>
+                <h2 style="padding-bottom: 10px">B) S.Y.B.A.</h2>
+                <h3 style="padding-bottom: 10px">Compulsory Subjects</h3>
+                <Ol>
+                    <li class="addmitions-points">
+                        Foundation Course Paper II
+                    </li>
+                    <li class="addmitions-points">
+                        Applied Compoment Group (any one)
+                        <ul>
+                            <li>Business Communication</li>
+                            <li>Advertising</li>
+                            <li>Demography</li>
+                        </ul>
+                    </li>
+                </Ol>
+                <h3 style="padding-bottom: 10px">Optional Subjects</h3>
+                <Ol>
+                    <li class="addmitions-points">
+                        English (Paper II & III) <br />OR <br />Marathi
+                        (Opt.) (Paper II & III) <br />OR <br />Hindi (Paper
+                        II & III)
+                    </li>
+                    <li class="addmitions-points">
+                        Economics (Paper II & III)
+                    </li>
+                    <li class="addmitions-points">
+                        Geography (Paper II & III)
+                    </li>
+                </Ol>
+                <h2 style="padding-bottom: 10px">C) T.Y.B.A.</h2>
+                <div style="padding-left: 20px">
+                    <h3>Six Papers</h3>
+                    Marathi / English / Hindi Economics / Geography
+                </div>
+                <div style="padding-left: 20px">
+                    <h3>Three Papers</h3>
+                    Marathi-Economics / Hindi-Economics Marathi-Geography
+                    /Hindi-Geography English-Economics
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h1 style="text-align: center">Commerce</h1>
+                <h2 style="padding-bottom: 10px">A) F.Y.B.Com.</h2>
+                <h3 style="padding-bottom: 10px">Subjects</h3>
+                <Ol>
+                    <li class="addmitions-points">
+                        Foundation Course Paper I
+                    </li>
+                    <li class="addmitions-points">
+                        Business Economics Paper I
+                    </li>
+                    <li class="addmitions-points">
+                        Business Communication
+                    </li>
+                    <li class="addmitions-points">Environmental Studies</li>
+                    <li class="addmitions-points">
+                        Mathematical & Statistical Techniques
+                    </li>
+                    <li class="addmitions-points">
+                        Accounting & Financial Management Paper I
+                    </li>
+                    <li class="addmitions-points">Commerce Paper I</li>
+                </Ol>
+
+                <h2 style="padding-bottom: 10px">B) S.Y.B.Com.</h2>
+                <h3 style="padding-bottom: 10px">Subjects</h3>
+                <Ol>
+                    <li class="addmitions-points">
+                        Foundation Course Paper II
+                    </li>
+                    <li class="addmitions-points">
+                        Business Economics Paper II
+                    </li>
+                    <li class="addmitions-points">Business Law</li>
+                    <li class="addmitions-points">Commerce Paper II</li>
+                    <li class="addmitions-points">
+                        Accounting & Financial Management Paper II
+                    </li>
+                    <li class="addmitions-points">
+                        Applied Component Group (Any One)
+                        <ul>
+                            <li>Mass Communication</li>
+                            <li>Economics System</li>
+                            <li>Advertising</li>
+                        </ul>
+                    </li>
+                    <li class="addmitions-points">
+                        Financial Accounting & Auditing - Auditing
+                    </li>
+                </Ol>
+
+                <h2 style="padding-bottom: 10px">C) T.Y.B.Com.</h2>
+                <div style="padding-left: 20px">
+                    <h3>Six Papers</h3>
+                    Marathi / English / Hindi Economics / Geography
+                </div>
+                <div style="padding-left: 20px">
+                    <h3>A) Special Group (3 Papers)</h3>
+                    <ol>
+                        <li>Financial Accounting & Auditing Paper I</li>
+                        <li>Auditing & Cost Accountung Paper II</li>
+                    </ol>
+
+                    <h4 style="padding-left: 30%">OR</h4>
+                    <h3>B) Special Group (3 Papers)</h3>
+                    <ol>
+                        <li>Business Management Paper I</li>
+                        <li>Business Management Paper II</li>
+                        <li>Business Management Paper III</li>
+                        <h4 style="padding-left: 30%">AND</h4>
+                        <li>
+                            Marketing And Human Resource Management
+                            (M.H.R.M.)
+                        </li>
+                        <li>Business Economics Paper III</li>
+                        <li>Marketing Research</li>
+                        <li>Export Marketing OR Industrial Psychology</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-8">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                                Find us
+                            </h2>
+                        </div>
+                        <address class="wow fadeInUp" data-wow-delay="0.4s">
                             <p>
-                                designed and created by
-                                <span class="last-name">abhinav sharma</span>
+                                Moti Talao Rd, Salaiwada, Sawantwadi,
+                                Maharashtra - 416510
                             </p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-8">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                                Reservation
+                            </h2>
+                        </div>
+                        <address class="wow fadeInUp" data-wow-delay="0.4s">
+                            <p>090-080-0650 | 090-070-0430</p>
+                            <p>
+                                <a href="mailto:jbnaikcollege@gmail.com
+">jbnaikcollege@gmail.com
+                                </a>
+                            </p>
+                            <p>LINE: eatery247</p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-8">
+                    <div class="footer-info footer-open-hour">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                                Open Hours
+                            </h2>
+                        </div>
+                        <div class="wow fadeInUp" data-wow-delay="0.4s">
+                            <p>Monday: Closed</p>
+                            <div>
+                                <strong>Tuesday to Friday</strong>
+                                <p>7:00 AM - 9:00 PM</p>
+                            </div>
+                            <div>
+                                <strong>Saturday - Sunday</strong>
+                                <p>11:00 AM - 10:00 PM</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
 
-        <%- include("../partialsindex/footer") -%>
-    </body>
+                <div class="col-md-2 col-sm-4">
+                    <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-envelope"></a></li>
+                    </ul>
+
+                    <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s">
+                        <p><br />Copyright &copy; 2020 <br />Restorent</p>
+                        <p>
+                            designed and created by
+                            <span class="last-name">abhinav sharma</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <%- include("../partialsindex/footer") -%>
+</body>
+
 </html>

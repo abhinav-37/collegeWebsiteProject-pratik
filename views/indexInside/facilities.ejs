@@ -1,359 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include("../partialsindex/header") -%>
-    <style>
-        @media (min-width: 765px) {
-            #footer {
-                bottom: 0;
-                width: 100%;
-                padding-bottom: 0;
-            }
-        }
-
-        .nav-link {
-            color: white !important;
-        }
-
-        .nav-link:hover {
-            color: red !important;
-        }
-        img {
+<%- include("../partialsindex/header") -%>
+<style>
+    @media (min-width: 765px) {
+        #footer {
+            bottom: 0;
             width: 100%;
-            box-shadow: 2px 2px 10px rgb(92, 90, 90);
+            padding-bottom: 0;
         }
+    }
+
+    .nav-link {
+        color: white !important;
+    }
+
+    .nav-link:hover {
+        color: red !important;
+    }
+
+    img {
+        width: 100%;
+        box-shadow: 2px 2px 10px rgb(92, 90, 90);
+    }
+
+    .row {
+        margin-bottom: 10rem;
+        border-bottom: grey 1px solid;
+    }
+
+    @media (max-width: 765px) {
         .row {
-            margin-bottom: 10rem;
-            border-bottom: grey 1px solid;
+            display: block !important;
         }
-        @media (max-width: 765px) {
-            .row {
-                display: block !important;
-            }
-        }
-        h3 {
-            margin-bottom: 3rem;
-        }
-        h4 {
-            padding-top: 4rem;
-        }
-    </style>
+    }
 
-    <body>
-        <!-- PRE LOADER -->
+    h3 {
+        margin-bottom: 3rem;
+    }
 
-        <div class="preloader">
-            <div id="loader"></div>
+    h4 {
+        padding-top: 4rem;
+    }
+</style>
+
+<body>
+    <!-- PRE LOADER -->
+
+    <div class="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- MENU -->
+    <section style="background-color: black; color: white" class="navbar custom-navbar navbar-fixed-top"
+        role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+
+                <!-- lOGO TEXT HERE -->
+                <a style="padding: 5px 0 0" href="/" class="navbar-brand"><img style="width: 40px"
+                        src="images/icons/jbn_logo_final.png" alt="" /></a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" class="smoothScroll">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#chefs" class="smoothScroll">management</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                            Acedemics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="/syllabus">
+                                    Syllabus</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/rules">
+                                    Rules & Regulations
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/results">
+                                    Results
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admission" class="smoothScroll">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/facilities" class="smoothScroll">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="smoothScroll">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="/login" class="section-btn"><i style="margin-right: 10px"
+                            class="fas fa-sign-in-alt"></i>Login</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center" class="container">
+        <h3 style="padding-bottom: 20px">DLEE</h3>
+        <div style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                " class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <p>
+                    Dr. J. B. Naik Arts & Commerce College, Sawantwadi
+                    offers DLLE facilities provided by the Mumbai
+                    University.
+                </p>
+                <p>
+                    The Department of Lifelong Learning and Extension [DLLE]
+                    (known earlier as Department of Adult and Continuing
+                    Education and Extension), established on October 12, in
+                    the Year 1978, has been recognized as a statutory
+                    Department of the University of Mumbai since 1994 to
+                    promote a meaningful and sustained rapport between the
+                    Universities and the community. The DLLE offers flexible
+                    Continuing Education opportunities for the people.
+                </p>
+                <a href="http://www.mudlle.ac.in ">www.mudlle.ac.in </a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="facility images" />
+            </div>
         </div>
 
-        <!-- MENU -->
-        <section
-            style="background-color: black; color: white"
-            class="navbar custom-navbar navbar-fixed-top"
-            role="navigation"
-        >
-            <div class="container">
-                <div class="navbar-header">
-                    <button
-                        class="navbar-toggle"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                    >
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
-                    </button>
-
-                    <!-- lOGO TEXT HERE -->
-                    <a style="padding: 5px 0 0" href="/" class="navbar-brand"
-                        ><img
-                            style="width: 40px"
-                            src="images/icons/jbn_logo_final.png"
-                            alt=""
-                    /></a>
-                </div>
-
-                <!-- MENU LINKS -->
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-nav-first">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#home"
-                                class="smoothScroll"
-                                >About</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="/#chefs"
-                                class="smoothScroll"
-                                >Staff</a
-                            >
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                data-toggle="dropdown"
-                            >
-                                Acedemics
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="/syllabus">
-                                        Syllabus</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="/rules">
-                                        Rules & Regulations
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="/results">
-                                        Results
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="/admission"
-                                class="smoothScroll"
-                                >Admission</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="/facilities"
-                                class="smoothScroll"
-                                >Facilities</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="smoothScroll">Contact</a>
-                        </li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <a href="/login" class="section-btn"
-                            ><i
-                                style="margin-right: 10px"
-                                class="fas fa-sign-in-alt"
-                            ></i
-                            >Login</a
-                        >
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section style="text-align: center" class="container">
-            <h3 style="padding-bottom: 20px">DLEE</h3>
-            <div
-                style="
+        <h3 style="padding-bottom: 20px">NSS</h3>
+        <div style="
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                "
-                class="row"
-            >
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <p>
-                        Dr. J. B. Naik Arts & Commerce College, Sawantwadi
-                        offers DLLE facilities provided by the Mumbai
-                        University.
-                    </p>
-                    <p>
-                        The Department of Lifelong Learning and Extension [DLLE]
-                        (known earlier as Department of Adult and Continuing
-                        Education and Extension), established on October 12, in
-                        the Year 1978, has been recognized as a statutory
-                        Department of the University of Mumbai since 1994 to
-                        promote a meaningful and sustained rapport between the
-                        Universities and the community. The DLLE offers flexible
-                        Continuing Education opportunities for the people.
-                    </p>
-                    <a href="http://www.mudlle.ac.in ">www.mudlle.ac.in </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img
-                        src="https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="facility images"
-                    />
-                </div>
+                " class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="facility images" />
             </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <p>
+                    The National Service Scheme (NSS) is a Central Sector
+                    Scheme of the Government of India, Ministry of Youth
+                    Affairs & Sports. It provides the opportunity to the
+                    student youth of India to take part in various
+                    government led community service activities & programs.
+                    The aim of the NSS is to provide hands-on experience to
+                    young students in delivering community service. There
+                    were over 3.8 million active participants in the NSS at
+                    the end of March 2018.
+                </p>
+                <p>
+                    Dr. J. B. Naik Arts & Commerce College, Sawantwadi
+                    provides NSS facilities to all its students since 2009.
+                    The volunteer students actively participate in Gram
+                    Svachhata Mohim, Blood Donation Camps, AIDS awareness,
+                    Red Ribbon Club, Disaster Management, and various other
+                    programs throughout their time at the Institution.
+                </p>
+                <a href="https://nss.gov.in">nss.gov.in </a>
+            </div>
+        </div>
 
-            <h3 style="padding-bottom: 20px">NSS</h3>
-            <div
-                style="
+        <h3 style="padding-bottom: 20px">Library</h3>
+        <div style="
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                "
-                class="row"
-            >
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img
-                        src="https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="facility images"
-                    />
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <p>
-                        The National Service Scheme (NSS) is a Central Sector
-                        Scheme of the Government of India, Ministry of Youth
-                        Affairs & Sports. It provides the opportunity to the
-                        student youth of India to take part in various
-                        government led community service activities & programs.
-                        The aim of the NSS is to provide hands-on experience to
-                        young students in delivering community service. There
-                        were over 3.8 million active participants in the NSS at
-                        the end of March 2018.
-                    </p>
-                    <p>
-                        Dr. J. B. Naik Arts & Commerce College, Sawantwadi
-                        provides NSS facilities to all its students since 2009.
-                        The volunteer students actively participate in Gram
-                        Svachhata Mohim, Blood Donation Camps, AIDS awareness,
-                        Red Ribbon Club, Disaster Management, and various other
-                        programs throughout their time at the Institution.
-                    </p>
-                    <a href="https://nss.gov.in">nss.gov.in </a>
-                </div>
+                " class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Est, porro commodi vel molestiae aspernatur magnam
+                    accusantium nobis sunt odit provident explicabo harum
+                    unde sapiente suscipit sed fugiat. Voluptate, officia
+                    dicta. Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Enim dolorum aliquid corrupti labore
+                    voluptatem, similique sed temporibus error delectus
+                    ducimus praesentium animi. Provident culpa beatae odit
+                    suscipit quasi, sapiente quibusdam?
+                </p>
             </div>
-
-            <h3 style="padding-bottom: 20px">Library</h3>
-            <div
-                style="
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                "
-                class="row"
-            >
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Est, porro commodi vel molestiae aspernatur magnam
-                        accusantium nobis sunt odit provident explicabo harum
-                        unde sapiente suscipit sed fugiat. Voluptate, officia
-                        dicta. Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Enim dolorum aliquid corrupti labore
-                        voluptatem, similique sed temporibus error delectus
-                        ducimus praesentium animi. Provident culpa beatae odit
-                        suscipit quasi, sapiente quibusdam?
-                    </p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img
-                        src="https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="facility images"
-                    />
-                </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="facility images" />
             </div>
+        </div>
 
-            <h3 style="padding-bottom: 20px">Post Matric Scholarships</h3>
+        <h3 style="padding-bottom: 20px">Post Matric Scholarships</h3>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
-                dignissimos libero eveniet quae nostrum similique rem? Tenetur
-                sequi vitae molestias? Quam recusandae cupiditate deserunt
-                labore. Maiores quaerat illum ratione at.
-            </p>
-        </section>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
+            dignissimos libero eveniet quae nostrum similique rem? Tenetur
+            sequi vitae molestias? Quam recusandae cupiditate deserunt
+            labore. Maiores quaerat illum ratione at.
+        </p>
+    </section>
 
-        <!-- FOOTER -->
-        <footer id="footer" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div style="margin-bottom: 0 !important" class="row">
-                    <div class="col-md-3 col-sm-8">
-                        <div class="footer-info">
-                            <div class="section-title">
-                                <h2 class="wow fadeInUp" data-wow-delay="0.2s">
-                                    Find us
-                                </h2>
-                            </div>
-                            <address class="wow fadeInUp" data-wow-delay="0.4s">
-                                <p>
-                                    Moti Talao Rd, Salaiwada, Sawantwadi,
-                                    Maharashtra - 416510
-                                </p>
-                            </address>
+    <!-- FOOTER -->
+    <footer id="footer" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div style="margin-bottom: 0 !important" class="row">
+                <div class="col-md-3 col-sm-8">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                                Find us
+                            </h2>
                         </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-8">
-                        <div class="footer-info">
-                            <div class="section-title">
-                                <h2 class="wow fadeInUp" data-wow-delay="0.2s">
-                                    Reservation
-                                </h2>
-                            </div>
-                            <address class="wow fadeInUp" data-wow-delay="0.4s">
-                                <p>090-080-0650 | 090-070-0430</p>
-                                <p>
-                                    <a
-                                        href="mailto:jbnaikcollege@gmail.com
-"
-                                        >jbnaikcollege@gmail.com
-                                    </a>
-                                </p>
-                                <p>LINE: eatery247</p>
-                            </address>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-8">
-                        <div class="footer-info footer-open-hour">
-                            <div class="section-title">
-                                <h2 class="wow fadeInUp" data-wow-delay="0.2s">
-                                    Open Hours
-                                </h2>
-                            </div>
-                            <div class="wow fadeInUp" data-wow-delay="0.4s">
-                                <p>Monday: Closed</p>
-                                <div>
-                                    <strong>Tuesday to Friday</strong>
-                                    <p>7:00 AM - 9:00 PM</p>
-                                </div>
-                                <div>
-                                    <strong>Saturday - Sunday</strong>
-                                    <p>11:00 AM - 10:00 PM</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 col-sm-4">
-                        <ul
-                            class="wow fadeInUp social-icon"
-                            data-wow-delay="0.4s"
-                        >
-                            <li><a href="#" class="fa fa-linkedin"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
-                            <li><a href="#" class="fa fa-envelope"></a></li>
-                        </ul>
-
-                        <div
-                            class="wow fadeInUp copyright-text"
-                            data-wow-delay="0.8s"
-                        >
-                            <p><br />Copyright &copy; 2020 <br />Restorent</p>
+                        <address class="wow fadeInUp" data-wow-delay="0.4s">
                             <p>
-                                designed and created by
-                                <span class="last-name">abhinav sharma</span>
+                                Moti Talao Rd, Salaiwada, Sawantwadi,
+                                Maharashtra - 416510
                             </p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-8">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                                Reservation
+                            </h2>
+                        </div>
+                        <address class="wow fadeInUp" data-wow-delay="0.4s">
+                            <p>090-080-0650 | 090-070-0430</p>
+                            <p>
+                                <a href="mailto:jbnaikcollege@gmail.com
+">jbnaikcollege@gmail.com
+                                </a>
+                            </p>
+                            <p>LINE: eatery247</p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-8">
+                    <div class="footer-info footer-open-hour">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                                Open Hours
+                            </h2>
+                        </div>
+                        <div class="wow fadeInUp" data-wow-delay="0.4s">
+                            <p>Monday: Closed</p>
+                            <div>
+                                <strong>Tuesday to Friday</strong>
+                                <p>7:00 AM - 9:00 PM</p>
+                            </div>
+                            <div>
+                                <strong>Saturday - Sunday</strong>
+                                <p>11:00 AM - 10:00 PM</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
 
-        <%- include("../partialsindex/footer") -%>
-    </body>
+                <div class="col-md-2 col-sm-4">
+                    <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-envelope"></a></li>
+                    </ul>
+
+                    <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s">
+                        <p><br />Copyright &copy; 2020 <br />Restorent</p>
+                        <p>
+                            designed and created by
+                            <span class="last-name">abhinav sharma</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <%- include("../partialsindex/footer") -%>
+</body>
+
 </html>

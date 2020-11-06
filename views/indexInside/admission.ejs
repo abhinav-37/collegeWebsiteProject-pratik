@@ -1,251 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include("../partialsindex/header") -%>
-    <style>
-        @media (min-width: 765px) {
-            #footer {
-                bottom: 0;
-                width: 100%;
-                padding-bottom: 0;
-            }
+<%- include("../partialsindex/header") -%>
+<style>
+    @media (min-width: 765px) {
+        #footer {
+            bottom: 0;
+            width: 100%;
+            padding-bottom: 0;
         }
+    }
 
-        .nav-link {
-            color: white !important;
-        }
+    .nav-link {
+        color: white !important;
+    }
 
-        .nav-link:hover {
-            color: red !important;
-        }
-    </style>
+    .nav-link:hover {
+        color: red !important;
+    }
+</style>
 
-    <body>
-        <!-- PRE LOADER -->
+<body>
+    <!-- PRE LOADER -->
 
-        <div class="preloader">
-            <div id="loader"></div>
-        </div>
+    <div class="preloader">
+        <div id="loader"></div>
+    </div>
 
-        <!-- MENU -->
-        <section
-            style="background-color: black; color: white"
-            class="navbar custom-navbar navbar-fixed-top"
-            role="navigation"
-        >
-            <div class="container">
-                <div class="navbar-header">
-                    <button
-                        class="navbar-toggle"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                    >
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
-                    </button>
+    <!-- MENU -->
+    <section style="background-color: black; color: white" class="navbar custom-navbar navbar-fixed-top"
+        role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
 
-                    <!-- lOGO TEXT HERE -->
-                    <a style="padding: 5px 0 0" href="/" class="navbar-brand"
-                        ><img
-                            style="width: 40px"
-                            src="images/icons/jbn_logo_final.png"
-                            alt=""
-                    /></a>
-                </div>
-
-                <!-- MENU LINKS -->
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-nav-first">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="/#about"
-                                class="smoothScroll"
-                                >About</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="/#team"
-                                class="smoothScroll"
-                                >Staff</a
-                            >
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                data-toggle="dropdown"
-                            >
-                                Acedemics
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="/syllabus">
-                                        Syllabus</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="/rules">
-                                        Rules & Regulations
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="/results">
-                                        Results
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="/admission"
-                                class="smoothScroll"
-                                >Admission</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="/facilities"
-                                class="smoothScroll"
-                                >Facilities</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="smoothScroll">Contact</a>
-                        </li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <a href="/login" class="section-btn"
-                            ><i
-                                style="margin-right: 10px"
-                                class="fas fa-sign-in-alt"
-                            ></i
-                            >Login</a
-                        >
-                    </ul>
-                </div>
+                <!-- lOGO TEXT HERE -->
+                <a style="padding: 5px 0 0" href="/" class="navbar-brand"><img style="width: 40px"
+                        src="images/icons/jbn_logo_final.png" alt="" /></a>
             </div>
-        </section>
 
-        <section class="container">
-            <h1 style="padding-bottom: 20px">Admission points</h1>
-            <ul>
-                <li class="addmitions-points">
-                    Students seeking admission should compulsorily enrolled in
-                    Mumbai University
-                    <a href="http://mumoa.digitaluniversity.ac"
-                        >Admission Portal</a
-                    >.
-                </li>
-                <li class="addmitions-points">
-                    Students are informed to read the college admission
-                    prospectus carefully.
-                </li>
-                <li class="addmitions-points">
-                    Admission to the F.Y./S.Y./T.Y. (BA / B.Com) will be as per
-                    the online system.
-                </li>
-            </ul>
-            <h3>
-                <a href="https://forms.gle/g2LTwyNNtugbrx4F9"
-                    >Go to admission form</a
-                >
-            </h3>
-        </section>
-
-        <!-- FOOTER -->
-        <footer id="footer" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-8">
-                        <div class="footer-info">
-                            <div class="section-title">
-                                <h2 class="wow fadeInUp" data-wow-delay="0.2s">
-                                    Find us
-                                </h2>
-                            </div>
-                            <address class="wow fadeInUp" data-wow-delay="0.4s">
-                                <p>
-                                    Moti Talao Rd, Salaiwada, Sawantwadi,
-                                    Maharashtra - 416510
-                                </p>
-                            </address>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-8">
-                        <div class="footer-info">
-                            <div class="section-title">
-                                <h2 class="wow fadeInUp" data-wow-delay="0.2s">
-                                    Reservation
-                                </h2>
-                            </div>
-                            <address class="wow fadeInUp" data-wow-delay="0.4s">
-                                <p>090-080-0650 | 090-070-0430</p>
-                                <p>
-                                    <a
-                                        href="mailto:jbnaikcollege@gmail.com
-"
-                                        >jbnaikcollege@gmail.com
-                                    </a>
-                                </p>
-                                <p>LINE: eatery247</p>
-                            </address>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-8">
-                        <div class="footer-info footer-open-hour">
-                            <div class="section-title">
-                                <h2 class="wow fadeInUp" data-wow-delay="0.2s">
-                                    Open Hours
-                                </h2>
-                            </div>
-                            <div class="wow fadeInUp" data-wow-delay="0.4s">
-                                <p>Monday: Closed</p>
-                                <div>
-                                    <strong>Tuesday to Friday</strong>
-                                    <p>7:00 AM - 9:00 PM</p>
-                                </div>
-                                <div>
-                                    <strong>Saturday - Sunday</strong>
-                                    <p>11:00 AM - 10:00 PM</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 col-sm-4">
-                        <ul
-                            class="wow fadeInUp social-icon"
-                            data-wow-delay="0.4s"
-                        >
-                            <li><a href="#" class="fa fa-linkedin"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
-                            <li><a href="#" class="fa fa-envelope"></a></li>
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about" class="smoothScroll">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#team" class="smoothScroll">management</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                            Acedemics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="/syllabus">
+                                    Syllabus</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/rules">
+                                    Rules & Regulations
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/results">
+                                    Results
+                                </a>
+                            </li>
                         </ul>
+                    </li>
 
-                        <div
-                            class="wow fadeInUp copyright-text"
-                            data-wow-delay="0.8s"
-                        >
-                            <p><br />Copyright &copy; 2020 <br />Restorent</p>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admission" class="smoothScroll">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/facilities" class="smoothScroll">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="smoothScroll">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="/login" class="section-btn"><i style="margin-right: 10px"
+                            class="fas fa-sign-in-alt"></i>Login</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h1 style="padding-bottom: 20px">Admission points</h1>
+        <ul>
+            <li class="addmitions-points">
+                Students seeking admission should compulsorily enrolled in
+                Mumbai University
+                <a href="http://mumoa.digitaluniversity.ac">Admission Portal</a>.
+            </li>
+            <li class="addmitions-points">
+                Students are informed to read the college admission
+                prospectus carefully.
+            </li>
+            <li class="addmitions-points">
+                Admission to the F.Y./S.Y./T.Y. (BA / B.Com) will be as per
+                the online system.
+            </li>
+        </ul>
+        <h3>
+            <a href="https://forms.gle/g2LTwyNNtugbrx4F9">Go to admission form</a>
+        </h3>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-8">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                                Find us
+                            </h2>
+                        </div>
+                        <address class="wow fadeInUp" data-wow-delay="0.4s">
                             <p>
-                                designed and created by
-                                <span class="last-name">abhinav sharma</span>
+                                Moti Talao Rd, Salaiwada, Sawantwadi,
+                                Maharashtra - 416510
                             </p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-8">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                                Reservation
+                            </h2>
+                        </div>
+                        <address class="wow fadeInUp" data-wow-delay="0.4s">
+                            <p>090-080-0650 | 090-070-0430</p>
+                            <p>
+                                <a href="mailto:jbnaikcollege@gmail.com
+">jbnaikcollege@gmail.com
+                                </a>
+                            </p>
+                            <p>LINE: eatery247</p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-8">
+                    <div class="footer-info footer-open-hour">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                                Open Hours
+                            </h2>
+                        </div>
+                        <div class="wow fadeInUp" data-wow-delay="0.4s">
+                            <p>Monday: Closed</p>
+                            <div>
+                                <strong>Tuesday to Friday</strong>
+                                <p>7:00 AM - 9:00 PM</p>
+                            </div>
+                            <div>
+                                <strong>Saturday - Sunday</strong>
+                                <p>11:00 AM - 10:00 PM</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
 
-        <%- include("../partialsindex/footer") -%>
-    </body>
+                <div class="col-md-2 col-sm-4">
+                    <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-envelope"></a></li>
+                    </ul>
+
+                    <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s">
+                        <p><br />Copyright &copy; 2020 <br />Restorent</p>
+                        <p>
+                            designed and created by
+                            <span class="last-name">abhinav sharma</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <%- include("../partialsindex/footer") -%>
+</body>
+
 </html>
