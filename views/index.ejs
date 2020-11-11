@@ -14,10 +14,25 @@
     }
 
     @media(min-width: 765px) {
-        .img-responsive {
-            margin-left: 50px;
-            margin-top: 30px
-        }
+        .img-responsive {}
+    }
+
+    .seperator-hr {
+        height: 10px;
+        position: relative;
+        width: 70%;
+        background: radial-gradient(ellipse farthest-side at top center, rgba(73, 71, 71, 0.39), transparent)
+    }
+
+    .seperator-hr:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        left: 0;
+        height: 3px;
+        background: linear-gradient(left, transparent, rgba(121, 21, 21, 0.068), rgba(175, 50, 50, 0.02), transparent)
     }
 </style>
 
@@ -134,7 +149,7 @@
                     </div>
                 </div>
 
-                <div class="item item-third">
+                <!-- <div class="item item-third">
                     <div class="caption">
                         <div class="container">
                             <div class="col-md-8 col-sm-12">
@@ -147,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -256,11 +271,11 @@
                 <div class="col-md-12 col-sm-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
                         <h2>In memory of</h2>
-
+                        <hr class="seperator-hr">
                     </div>
                 </div>
 
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-12">
                     <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
                         <img src="images/management/Dr_J_B_Naik.webp" class="img-responsive" alt="" />
                         <div class="team-hover">
@@ -278,7 +293,28 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-12">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s" style="display: inline-block;">
+                        <img src="images/DSC01278.webp" class="img-responsive" alt="" />
+                        <div class="team-hover">
+                            <div class="team-item">
+                                <h4>
+                                    Guruvarva B.S. Naik worked on education awareness 50 years ago public service.
+                                    Active in Social and political work.
+                                    Education awareness in farmers and rural areas. Establishment of ‘Shikshan Prasarak
+
+                                </h4>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>D. B. Dholam</h3>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
                     <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
                         <img src="images/management/B_S_Naik.webp" class="img-responsive" alt="" />
                         <div class="team-hover">
@@ -308,13 +344,13 @@
     </section>
 
     <!-- MENU-->
-    <section id="menu" data-stellar-background-ratio="0.5">
+    <section id="menu" data-stellar-background-ratio="0.5" style="background-color: rgba(228, 226, 225, 0.623);">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
                         <h2>Photo Gallery</h2>
-
+                        <hr class="seperator-hr">
                     </div>
                 </div>
 
