@@ -190,7 +190,7 @@ app.post("/login", function (req, res) {
         }
     });
 });
-let PORT = 8000;
+let PORT = 3000;
 app.listen(process.env.PORT || PORT, function () {
     console.log(`server has started on port ${PORT}`);
 });
