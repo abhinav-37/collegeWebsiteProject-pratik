@@ -545,7 +545,7 @@
 
 
                     <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s">
-                        <p><br />Copyright &copy; 2020 <br />JBN college</p>
+                        <p><br />Copyright &copy; 2020 <br />Dr. J. B. Naik Arts & Commerce College, Sawantwadi</p>
                         <p>
                             designed and created by
                             <span class="last-name">esqb Technologies </span>
@@ -568,7 +568,11 @@
                 url: "/messagePost",
                 data: { email: $("#cf-email").val(), name: $("#cf-name").val(), subject: $("#cf-subject").val(), message: $("#cf-message").val() },
                 success: function (data) {
-                    console.log(data)
+                    window.alert("message sent successfully!!!");
+                    $("#cf-email").val("")
+                    $("#cf-name").val("")
+                    $("#cf-subject").val("")
+                    $("#cf-message").val("")
                 }
             })
         })
