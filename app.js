@@ -4,6 +4,8 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 const passportLocalMongoose = require("passport-local-mongoose");
 const express = require("express");
+const nodemailer = require("nodemailer")
+const message = require("./models/message");
 const app = express();
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
@@ -190,6 +192,46 @@ app.post("/login", function (req, res) {
         }
     });
 });
+
+//nodemailer config...
+
+app.post("/messagePost", async function (req, res) {
+    let newmessage = new message(req.body);
+    await newmessage.save();
+    //==================Nodemailer integration===============//
+    let mailBody = ` <div style="text-align:center">
+        <h1 style="color:#4e89ae">A new message has Arrived!</h1>
+        <h2>Name: ${req.body.name}</h2>
+        <h2>Email: ${req.body.email}</h2>
+        <h2>subject: ${req.body.subject} </h2>
+        <h4>message: ${req.body.message}</h4>
+        </div>
+    `
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+        user: "chat.website.jbn@gmail.com", 
+        pass: "jbn_pass", 
+        },
+        tls: {
+            rejectUnauthorized:false
+        }
+    });
+
+    // send mail with defined transport object
+    let info = await transporter.sendMail({
+        from: '"Chat delivery" <chat.website.jbn@gmail.com>', // sender address
+        to: "jbnaikcollege@gmail.com", // list of receivers
+        subject: " Message from a user from the website. ", // Subject line
+        text: "Hello world?", // plain text body
+        html:mailBody, // html body
+    });
+    res.end("done");
+})
+
 let PORT = 4000;
 app.listen(process.env.PORT || PORT, function () {
     console.log(`server has started on port ${PORT}`);

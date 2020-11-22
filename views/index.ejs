@@ -443,7 +443,7 @@
                     </div>
 
                     <!-- CONTACT FORM -->
-                    <form method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
+                    <form class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
                         <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
                         <h6 class="text-success">
                             Your message has been sent successfully.
@@ -471,7 +471,7 @@
                             <textarea class="form-control" rows="6" id="cf-message" name="message"
                                 placeholder="what's your messege"></textarea>
 
-                            <button type="submit" class="form-control" id="cf-submit" name="submit">
+                            <button class="form-control" id="cf-submit" name="submit">
                                 Send Message
                             </button>
                         </div>
@@ -557,6 +557,22 @@
     </footer>
 
     <%- include("partialsindex/footer") -%>
+    <script>
+        $("form").submit(function (e) {
+            e.preventDefault();
+        });
+        $("#cf-submit").click(function () {
+            console.log("clicked")
+            $.ajax({
+                type: "POST",
+                url: "/messagePost",
+                data: { email: $("#cf-email").val(), name: $("#cf-name").val(), subject: $("#cf-subject").val(), message: $("#cf-message").val() },
+                success: function (data) {
+                    console.log(data)
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
