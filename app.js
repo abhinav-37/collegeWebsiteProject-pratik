@@ -4,7 +4,7 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 const passportLocalMongoose = require("passport-local-mongoose");
 const express = require("express");
-const nodemailer = require("nodemailer")
+const nodemailer = require("nodemailer");
 const message = require("./models/message");
 const app = express();
 app.set("view engine", "ejs");
@@ -100,7 +100,6 @@ app.get("/logout", function (req, res) {
 app.get("/", function (req, res) {
     Notice.find({}, function (err, post) {
         post.reverse();
-
         res.render("index.ejs", { notice: post });
     });
 });
@@ -129,8 +128,8 @@ app.get("/year3", function (req, res) {
     res.render("indexInside/result_year3.ejs");
 });
 app.get("/management", function (req, res) {
-    res.render("indexInside/management")
-})
+    res.render("indexInside/management");
+});
 // ==================post routes ==========================
 app.post("/register", function (req, res) {
     if (req.isAuthenticated()) {
@@ -206,19 +205,19 @@ app.post("/messagePost", async function (req, res) {
         <h2>subject: ${req.body.subject} </h2>
         <h4>message: ${req.body.message}</h4>
         </div>
-    `
+    `;
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-        user: "chat.website.jbn@gmail.com", 
-        pass: "jbn_pass", 
+            user: "chat.website.jbn@gmail.com",
+            pass: "jbn_pass",
         },
         tls: {
-            rejectUnauthorized:false
-        }
+            rejectUnauthorized: false,
+        },
     });
 
     // send mail with defined transport object
@@ -227,10 +226,10 @@ app.post("/messagePost", async function (req, res) {
         to: "jbnaikcollege@gmail.com", // list of receivers
         subject: " Message from a user from the website. ", // Subject line
         text: "Hello world?", // plain text body
-        html:mailBody, // html body
+        html: mailBody, // html body
     });
     res.end("done");
-})
+});
 
 let PORT = 4000;
 app.listen(process.env.PORT || PORT, function () {
